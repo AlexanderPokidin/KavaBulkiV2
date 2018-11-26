@@ -5,12 +5,12 @@ import com.pokidin.a.kavabulkiv2.base.MvpView;
 
 public interface MainContract {
 
-    interface MainView extends MvpView {
+    interface View extends MvpView {
 
-        void buttonPressed();
+        void buttonMenuPressed();
     }
 
-    interface MainPresenter extends MvpPresenter<MainView> {
-        void openNextView();
+    interface Presenter extends MvpPresenter<View> {
+        void openMenuScreen();
     }
 }
